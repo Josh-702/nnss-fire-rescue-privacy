@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy — NNSS Fire &amp; Rescue</title>
+  <style>
+    :root {
+      --accent: #b91c1c;
+      --fg: #111827;
+      --muted: #4b5563;
+      --line: #e5e7eb;
+      --bg: #f9fafb;
+      --card: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e8edf3;
+        --muted: #9aa6b4;
+        --line: #243040;
+        --bg: #0b1118;
+        --card: #141c26;
+        --accent: #ef4444;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    header {
+      background: #b91c1c;
+      color: #fff;
+      padding: 28px 20px 24px;
+    }
+    header .wrap, main, footer .wrap { max-width: 760px; margin: 0 auto; }
+    header p { margin: 6px 0 0; opacity: .92; font-size: 15px; }
+    h1 { margin: 0; font-size: 1.7rem; letter-spacing: -0.02em; }
+    main { background: var(--card); padding: 28px 20px 48px; }
+    h2 { font-size: 1.2rem; margin: 2em 0 .6em; }
+    p, li { color: var(--fg); }
+    .muted, .meta { color: var(--muted); font-size: 15px; }
+    a { color: var(--accent); }
+    table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 15.5px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 10px; border: 1px solid var(--line); }
+    th { background: var(--bg); }
+    nav.toc { border: 1px solid var(--line); border-radius: 12px; padding: 12px 18px; background: var(--bg); margin: 1.4em 0 1.8em; }
+    nav.toc ol { margin: 0; padding-left: 1.2em; }
+    nav.toc a { text-decoration: none; }
+    nav.toc a:hover { text-decoration: underline; }
+    footer { padding: 20px; color: var(--muted); font-size: 14px; }
+    .skip { position: absolute; left: -999px; }
+    .skip:focus { left: 12px; top: 12px; background: #fff; color: #111; padding: 8px 12px; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header>
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p>NNSS Fire &amp; Rescue &middot; Effective November 12, 2026</p>
+    </div>
+  </header>
+  <main id="content">
+    <p class="meta">
+      <strong>App:</strong> NNSS Fire &amp; Rescue (<code>com.ngtm.nnssprotocols</code>)<br>
+      <strong>Publisher:</strong> NGTM<br>
+      <strong>Contact:</strong> <a href="mailto:hulkemt@gmail.com">hulkemt@gmail.com</a>
+    </p>
+    <p>This policy describes how the NNSS Fire &amp; Rescue mobile app handles information. It is written for the Android app submitted to Google Play and also covers the same app on other platforms when they use the same design.</p>
+    <p>The app is for NNSS Fire &amp; Rescue personnel. It is not a public product and is not a medical device.</p>
+
+    <nav class="toc" aria-label="Contents">
+      <ol>
+        <li><a href="#what">What the app does</a></li>
+        <li><a href="#on-device">Information stored only on your device</a></li>
+        <li><a href="#leaves">Information that may leave the device</a></li>
+        <li><a href="#not-collected">What we do not collect</a></li>
+        <li><a href="#permissions">Permissions</a></li>
+        <li><a href="#backups">Backups and uninstalling</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#security">Data security and retention</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="what">1. What the app does</h2>
+    <p>The app is a department reference tool. EMS protocols and the shift schedule are bundled on the device so they work offline. Other modules (department directory, project labor agreements, and the NNSS F&amp;R Benevolent Association) may be included and are protected by an on-device PIN, with optional biometric unlock. Some of those modules may still be placeholders until content is added.</p>
+    <p>You do not create an account, and the publisher does not operate a login service in this version of the app.</p>
+
+    <h2 id="on-device">2. Information stored only on your device</h2>
+    <p>The app stores the following locally. It is not sent to NGTM or to any server operated by the publisher:</p>
+    <ul>
+      <li>A <strong>PIN credential</strong>, stored only as a salted PBKDF2-SHA-256 hash (not the PIN itself), plus related lock state such as failed-attempt timing and whether you enabled biometric unlock. The PIN is created by you on first use of a locked section. You can remove it in the app (About → Reset app PIN).</li>
+      <li><strong>Preferences</strong>, such as light/dark/auto theme, favorite protocols, recent protocols, and your selected shift-schedule highlight.</li>
+      <li><strong>Cached content updates</strong>, if a signed content update is ever downloaded. These are kept in on-device storage (IndexedDB) and used only by the app. The current Play build does not have an update server configured, so this cache is not used unless a later version enables it.</li>
+    </ul>
+    <p>The app does not encrypt the bundled protocol files at rest. The PIN is an access gate for the directory, PLA, and Benevolent Association tabs on a shared or handled phone. It is not full-disk encryption of the app’s content. EMS protocols and the shift schedule can be opened without a PIN.</p>
+    <p>Optional <strong>fingerprint or face unlock</strong> uses the Android biometric prompt. The app does not receive, store, or transmit your biometric template. That data stays in the device’s biometric system. The app only stores a flag that you chose to allow biometric unlock.</p>
+
+    <h2 id="leaves">3. Information that may leave the device</h2>
+    <h3>Live literature search (optional, user-initiated)</h3>
+    <p>EMS protocol pages can include curated citations that are already bundled in the app and work offline. If you tap <strong>Search latest research</strong>, the app sends a topic search query to the National Library of Medicine (NCBI) PubMed E-utilities over HTTPS:</p>
+    <p><code>https://eutils.ncbi.nlm.nih.gov/entrez/eutils/</code></p>
+    <p>The request includes a medical topic query derived from the protocol you are viewing (not a free-text box of your own), a tool identifier (<code>nnss-ems-protocols</code>), and the publisher contact email (<code>hulkemt@gmail.com</code>) required by NCBI. NCBI also receives standard network information such as your IP address. The publisher does not receive a copy of this request and does not log it.</p>
+    <p>This happens only when you start a live search and only when the device is online. If you never use that button, no PubMed request is made. Curated citations and the protocol text itself do not require a network connection.</p>
+    <p>If you tap a PubMed, DOI, or similar link, your device may open that page in a browser. Those sites have their own privacy policies.</p>
+    <h3>Content updates (not active in the current build)</h3>
+    <p>The app can check a publisher-configured HTTPS address for a signed content manifest and, if a newer verified package is available, download it. The current official build has no update server configured, so it does not make this request. If a later version enables updates, the device would contact only that configured server, and the app would reject files that fail signature or integrity checks. Any such server would be covered by an updated policy and should not be a public, unauthenticated host for internal documents.</p>
+    <p>The app requests the Internet permission so that optional PubMed search (and future signed updates, if enabled) can run. Core protocols and the shift schedule work with the network turned off.</p>
+
+    <h2 id="not-collected">4. What we do not collect</h2>
+    <p>The publisher does not collect:</p>
+    <ul>
+      <li>Names, account credentials, or profile information</li>
+      <li>Your PIN or biometric data</li>
+      <li>Precise or approximate location</li>
+      <li>Contacts, call logs, photos, or files from your device</li>
+      <li>Payment or financial information</li>
+      <li>Analytics, advertising identifiers, crash-reporting, or usage telemetry</li>
+      <li>Health or patient information about you or anyone you treat</li>
+    </ul>
+    <p>There are no ads, no in-app purchases, and no third-party analytics or advertising SDKs in the app. The app does not use Firebase, Google Analytics, or similar services.</p>
+    <p>The app displays department EMS protocols and related medical reference material. It does <strong>not</strong> collect personal health information. It is a reference to official protocols, not a tool that records patient care.</p>
+
+    <h2 id="permissions">5. Permissions</h2>
+    <table>
+      <thead><tr><th>Permission</th><th>Why it is used</th></tr></thead>
+      <tbody>
+        <tr><td>Internet</td><td>Optional live PubMed search, and signed content updates if they are enabled in a later build</td></tr>
+        <tr><td>Biometric / fingerprint</td><td>Optional unlock of the Directory, PLA, and Benevolent Association tabs</td></tr>
+      </tbody>
+    </table>
+    <p>No other sensitive permissions (location, camera, microphone, contacts, SMS, or storage of your personal files) are requested.</p>
+
+    <h2 id="backups">6. Backups and uninstalling</h2>
+    <p>The Android app allows standard device backups. If you use Android backup, local app data — including preferences and the PIN <em>hash</em> — may be included in a backup stored in your Google account or on the device. The PIN itself is not stored.</p>
+    <p>To remove local app data, use About → Reset app PIN, clear the app’s storage in Android settings, or uninstall the app.</p>
+
+    <h2 id="children">7. Children</h2>
+    <p>The app is intended for adult NNSS Fire &amp; Rescue personnel and is not directed at children under 13 (or under 16 where that is the applicable age). We do not knowingly collect personal information from children.</p>
+
+    <h2 id="security">8. Data security and retention</h2>
+    <p>Live PubMed requests, when you make them, travel over HTTPS. Information the app keeps on the device stays on the device until you clear it or uninstall the app. The publisher does not operate a user database for this app and therefore has no cloud copy of your PIN, favorites, or preferences to delete.</p>
+    <p>This policy does not claim that any method of transmission or storage is perfectly secure.</p>
+
+    <h2 id="changes">9. Changes</h2>
+    <p>If the app’s data practices change (for example, if a content-update server is turned on, or if a department login is added), this policy will be updated and the effective date will change. The current policy will be posted at the public URL provided in the Google Play listing.</p>
+
+    <h2 id="contact">10. Contact</h2>
+    <p>Questions about this policy or the app:</p>
+    <p><strong>Email:</strong> <a href="mailto:hulkemt@gmail.com">hulkemt@gmail.com</a><br>
+    <strong>Publisher:</strong> NGTM</p>
+  </main>
+  <footer>
+    <div class="wrap">NNSS Fire &amp; Rescue &middot; Privacy Policy &middot; Effective November 12, 2026</div>
+  </footer>
+</body>
+</html>
